@@ -1,8 +1,34 @@
 # SQL for Data Analysis – Udacity Exercises
 
-This repository contains solutions to the exercises from the SQL for Data Analysis course on Udacity (https://www.udacity.com/course/sql-for-data-analysis--ud198). These exercises are designed to strengthen SQL skills for data analysis.
+This repository contains solutions to the exercises from the [SQL for Data Analysis](https://www.udacity.com/course/sql-for-data-analysis--ud198) course on Udacity. These exercises are designed to strengthen SQL skills for data analysis.
 
-## Folder Structure
+## Database
+
+The database used in the exercises is located at `database/parch-and-posey.sql`.
+
+To locally install the database, follow these steps:
+
+1. Ensure you have PostgreSQL installed on your machine. You can download it from [here](https://www.postgresql.org/download/).
+
+2. Open your terminal and create a new database:
+    ```sh
+    createdb parch_and_posey
+    ```
+
+3. Import the SQL file into the newly created database:
+    ```sh
+    psql -d parch_and_posey -f database/parch-and-posey.sql
+    ```
+
+4. Verify the database has been imported correctly by connecting to it:
+    ```sh
+    psql parch_and_posey
+    ```
+
+You should now have the `parch_and_posey` database set up and ready for use with the exercises.
+
+
+## Lesson
 
 - [**Lesson1**: Basic SQL queries and operations](1.Basic_SQL.md)
 - [**Lesson2**: SQL joins](2.SQL_Joins.md)
